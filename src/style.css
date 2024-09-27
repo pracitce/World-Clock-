@@ -3,6 +3,7 @@
 body{
     background-color: aqua;
     font-family: sans-serif;
+    align-items: center;
 }
 
 
@@ -34,11 +35,11 @@ select{
 .container{
 
     max-width: 600px;
-    margin: 60 0;
     background: white;
     padding: 20px;
     box-shadow: 10px 5px 15px red;
     border-radius: 10px;
+
  
 }
 
