@@ -23,7 +23,30 @@ losAngelesTimeElement.innerHTML = losAngelesTime.format("h:mm:ss [<small>]A[</sm
   parisTimeElement.innerHTML = parisTime.format("h:mm:ss [<small>]A[</small>]"
   );
 }
+function updateCity(event){
+let cityTimeZone = event.target.value;
+let cityTIme = moment().tz(cityTimeZone);
+let citiesElement = document.querySelector("#cities");
 
-  updateTime();
+
+
+
+}
+  
+
+function updateCity(event){
+    let cityTimeZone = event.target.value;
+    let cityTime = moment().tz(cityTimeZone);
+    console.log(cityTime.format("MMMM Do YYYY"));
+
+
+
+}
+updateTime();
 
   setInterval(updateTime, 1000);
+
+
+
+let citiesSelectElement = document.querySelector("#city");
+citiesSelectElement.addEventListener("change", updateCity); 
