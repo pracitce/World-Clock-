@@ -26,17 +26,9 @@ losAngelesTimeElement.innerHTML = losAngelesTime.format("h:mm:ss [<small>]A[</sm
   parisTimeElement.innerHTML = parisTime.format("h:mm:ss [<small>]A[</small>]"
   );
 }
-}
-function updateCity(event){
-let cityTimeZone = event.target.value;
-let cityTIme = moment().tz(cityTimeZone);
-let citiesElement = document.querySelector("#cities");
-
-
-
 
 }
-  
+
 
 function updateCity(event){
     let cityTimeZone = event.target.value;
